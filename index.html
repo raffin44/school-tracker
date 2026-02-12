@@ -1,9 +1,43 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-                <h1>Students entered:</h1>
-                <h2 id="count-el">0</h2>
-    </body>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>BTHS Entrance Tracker</title>
+</head>
+<body>
+
+<main class="container">
+
+    <header>
+        <h1>Brooklyn Technical High School</h1>
+        <p>School entrance tracker | Real time student monitoring</p>
+    </header>
+
+    <section id="counter-display">
+        <h2 id="count-el">0</h2>
+
+        <div class="button-group">
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="save-btn" onclick="save()">SAVE</button>
+            <button onclick="resetAll()">RESET</button>
+            <button onclick="spiritDay()">SPIRIT DAY 🎉</button>
+        </div>
+    </section>
+
+    <section class="stats-dashboard">
+        <div class="stat-card">
+            <h3>Total Students Today</h3>
+            <p id="total-el">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Entry Sessions</h3>
+            <p id="log-el"></p>
+        </div>
+    </section>
+
+</main>
+
+<script src="index.js"></script>
+</body>
 </html>
