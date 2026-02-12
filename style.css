@@ -73,18 +73,18 @@ button {
 }
 
 ul {
-  list-style-type: none; /* Removes bullet points for a cleaner look */
+  list-style-type: none; /
   padding: 0;
 }
 
 #increment-btn {
-  background: #0077b6; /* blue */
+  background: #0077b6; 
 }
 
 #save-btn {
-  background: #ff6b35; /* orange */
+  background: #ff6b35; 
 }
 
 button:nth-child(3) {
-  background: #6a4c93; /* purple reset */
+  background: #6a4c93; 
 }
