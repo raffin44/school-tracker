@@ -14,22 +14,18 @@ function increment() {
     console.log("Current count:", count);
 }
 
-// SAVE FUNCTION
 function save() {
 
-    // push current count into history array
     historyLog.push(count);
 
     // update UI
     renderHistory();
     calculateTotal();
 
-    // reset counter
     count = 0;
     countEl.textContent = count;
 }
 
-// RENDER HISTORY
 function renderHistory() {
     logEl.textContent = historyLog.join(" - ");
 }
@@ -45,7 +41,6 @@ function calculateTotal() {
     totalEl.textContent = total;
 }
 
-// RESET EVERYTHING
 function resetAll() {
     count = 0;
     historyLog = [];
